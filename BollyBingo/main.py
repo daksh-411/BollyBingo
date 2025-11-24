@@ -38,6 +38,7 @@ while not gameOver:
     if guess not in movie:
         print(f"The letter {guess} is not in the movie name. You lost a life.")
         attempts -= 1
+        print(f"Attempts Left: {attempts}")
 
         if attempts == 0:
             print("You exhausted all the lives. You Lost")
